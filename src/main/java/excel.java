@@ -66,11 +66,12 @@ public class excel {
         //获取行数
         int rows = sheet.getPhysicalNumberOfRows();
 
-        String [][] str=new String[rows][];
-        for(int i=0;i<rows;i++){
+        String [][] str=new String[rows-1][];
+        for(int i=0;i<rows-1;i++){
             //获取列数
             XSSFRow row = sheet.getRow(i);
             int columns = row.getPhysicalNumberOfCells();
+
             str[i]=new String[columns];
 
             for(int j=0;j<columns;j++){
@@ -89,7 +90,7 @@ public class excel {
         //获取第二行第4列
         String cell2 = sheet1.getExcelDateByIndex(1, 0);
         //根据第3列值为“customer23”的这一行，来获取该行第2列的值
-        String cell3 = sheet1.getCellByCaseName("customer23", 2,1);
+//        String cell3 = sheet1.getCellByCaseName("customer23", 2,1);
 //        System.out.println(cell2);
 //        System.out.println(cell3);
 //        System.out.println();
