@@ -19,6 +19,7 @@ public class TestSort {
         for(int i=0;i<arrays.length;i++){
             for(int j=0;j<arrays[i].length;j++){
                 System.out.print("["+i+"]["+j+"]:"+arrays[i][j]+"\t\t");
+
             }
             System.out.println();
         }
