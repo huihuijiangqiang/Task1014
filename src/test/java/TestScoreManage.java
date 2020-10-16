@@ -1,6 +1,7 @@
+import org.junit.Assert;
 import org.junit.Test;
-
-public class TestSort {
+import org.junit.Assert.*;
+public class TestScoreManage {
     //测试根据总成绩进行排序
     @Test
     public void Test_01(){
@@ -12,13 +13,8 @@ public class TestSort {
                 {"100003","学生3","50","60","80"},
                 {"100004","学生4","50","40","70"},
                 {"100005","学生5","50","30","70"}};
-        W_Sort_Interface w=new W_Sort_Interface_IMPL();
-        String[][] arrays = w.Sort_bySum(str);
-        for(int i=0;i<arrays.length;i++){
-            for(int j=0;j<arrays[i].length;j++){
-                System.out.print("["+i+"]["+j+"]:"+arrays[i][j]+"\t\t");
-            }
-            System.out.println();
-        }
+        W_ScoreManage_Interface w=new W_ScoreManage_Interface_IMPL();
+        double arrays = w.max_score(str, "语文成绩");
+        Assert.assertEquals(arrays,60,0);
     }
 }
