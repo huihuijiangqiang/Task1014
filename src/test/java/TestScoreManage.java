@@ -16,5 +16,6 @@ public class TestScoreManage {
         W_ScoreManage_Interface w=new W_ScoreManage_Interface_IMPL();
         double arrays = w.max_score(str, "语文成绩");
         Assert.assertEquals(arrays,60,0);
+        Assert.assertEquals(w.average_score(str,"语文成绩"),52,0);
     }
 }
