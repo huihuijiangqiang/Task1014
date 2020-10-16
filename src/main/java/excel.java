@@ -5,7 +5,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
 
-
+/**
+ *读取excel内容
+ */
 public class excel {
     private XSSFSheet sheet;
 
