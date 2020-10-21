@@ -4,6 +4,7 @@ public class main {
         H_SelectScore_Interface h=new H_SelectScore_Interface_IMPL();
         W_Sort_Interface ws=new W_Sort_Interface_IMPL();
         //socre.xlsx的地址，读取excel中的信息
+
         excel excel=new excel("D:\\Task1014\\score.xlsx", "sheet2");
         String[][] str = excel.readExcelData();
 //        System.out.println(w.average_score(str,"物理成绩"));//查询平均成绩
