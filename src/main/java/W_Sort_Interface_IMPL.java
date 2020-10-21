@@ -5,10 +5,12 @@ public class W_Sort_Interface_IMPL implements W_Sort_Interface {
     @Override
     public String[][] Sort_bySum(String[][] str) {
         String [][] newStr=new String[str.length][];
+        //复制数组
         for (int i = 0; i < str.length; i++) {
             newStr[i]=Arrays.copyOf(str[i],str[i].length+1);
         }
         newStr[0][newStr[0].length-1]="0";
+        //求总成绩
         for (int i = 1; i < newStr.length; i++) {
             Double sum=0.0;
             for (int j = 2; j <newStr[i].length-1 ; j++) {
