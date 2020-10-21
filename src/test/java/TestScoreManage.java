@@ -7,6 +7,9 @@ public class TestScoreManage {
     
     @Test
     public void Test_01(){
+        //真实数据
+//        excel excel=new excel("D:\\Task1014\\score.xlsx", "sheet2");
+//        String[][] str = excel.readExcelData();
         //虚假学生数据
         String [][] str=new String[][]{
                 {"学号","姓名","语文成绩","数学成绩","英语成绩"},
