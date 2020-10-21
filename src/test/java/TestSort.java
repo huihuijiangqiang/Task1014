@@ -5,7 +5,7 @@ public class TestSort {
     @Test
     public void Test_01(){
         //真实数据
-//        excel excel=new excel("D:\\Task1014\\score.xlsx", "sheet2");
+//        excel excel=new excel("D:\\github\\Task1014\\score.xlsx", "sheet2");
 //        String[][] str = excel.readExcelData();
         //虚假学生数据
         String [][] str=new String[][]{
