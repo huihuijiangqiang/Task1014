@@ -1,5 +1,6 @@
 public class main {
     public static void main(String[] args) {
+        //相应接口
         W_ScoreManage_Interface w =new W_ScoreManage_Interface_IMPL();
         H_SelectScore_Interface h=new H_SelectScore_Interface_IMPL();
         W_Sort_Interface ws=new W_Sort_Interface_IMPL();
@@ -24,4 +25,6 @@ public class main {
             System.out.println();
         }
     }
+
+
 }
